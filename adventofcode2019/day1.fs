@@ -22,7 +22,7 @@ let calculate_fuels (sum1, sum2) line =
     let fuel = calculate_fuel line_parsed (BigInteger 0) false
     (sum1 + fuel, sum2 + (calculate_fuel fuel fuel true))
 
-[<EntryPoint>]
+// [<EntryPoint>]
 let main argv = 
     let lines = 
         try
