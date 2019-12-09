@@ -1,7 +1,6 @@
 ﻿module day2
 
 open System
-open System.Numerics
 
 let replace_el target new_val arr =
     Array.mapi (fun i old_val -> if i = target then new_val else old_val) arr
