@@ -50,7 +50,7 @@ let shortest_distance crosses =
     let distance_func = fun _ _ steps -> steps
     find_closest crosses distance_func
 
-[<EntryPoint>]
+// [<EntryPoint>]
 let main argv =
     let lines = IO.File.ReadAllLines @"..\..\inputs\3-small.in"
     let first_input = (Seq.item 0 lines).Split([| ',' |])
